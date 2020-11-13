@@ -3,56 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Bouncing Balls</title>
-<style>
-body{
-margin:0;
-padding:0;
-background-image:linear-gradient(45deg, #de4325 25%, #ff9820 40%, #fff000 60%);
-background-size:200% 200%;
-}
-
-section.wrapper{
-display:flex;
-height:100vh;
-}
-
-div.flex{
-display:flex;
-flex-direction:row;
-flex-wrap:wrap;
-align-items:center;
-margin:0 auto;
-}
-
-.flex > span{
-width:50px;
-height:50px;
-border-radius:50%;
-margin:10px 25px;
-background-color:white;
-animation: bounce 5s ease infinite;
-}
-
-@keyframes bounce{
-0%,50%,100%{transform:scaleY(1);}
-25%,75%{transform:translateY(-150px) scaleX(.66) scaleY(1.25);}
-15%,40%,65%,90%{transform: translateY(30px) scaleX(1.25) scaleY(.5);}
-}
-
-.flex > span.circle-2{
-animation-delay: .2s;
-}
-.flex > span.circle-3{
-animation-delay: .4s;
-}
-.flex > span.circle-4{
-animation-delay: .6s;
-}
-.flex > span.circle-5{
-animation-delay: .8s;
-}
-</style>
-
+<link href="bouncing_balls.css" rel="stylesheet">
 </head>
 
 <body>
